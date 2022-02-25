@@ -22,6 +22,5 @@ foo() {
     this does not spark joy  
 }
 ```  
-hello
 
 *Violaters will be sued for emotional damages.*
