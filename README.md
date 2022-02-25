@@ -2,7 +2,7 @@
 
 This is an object avoidance project using computer vision with [Duckiebots](https://www.duckietown.org/)  
   
-Team Members: Bogdan Belenis, Keagan Holmes, Eungcheong Kim  
+Team Members: Bogdan Belenis, Keagan Holmes, Eungchong Kim  
   
   
 
