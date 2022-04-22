@@ -1,0 +1,3 @@
+[submodule "duckietown_yolov5"]
+	path = duckietown_yolov5
+	url = https://github.com/ldw200012/duckietown_yolov5.git
