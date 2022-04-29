@@ -3,14 +3,17 @@ import os
 import cv2
 from cv_bridge import CvBridge
 
-import numpy
+import numpy as np
 
 import rospy
 from sensor_msgs.msg import Image
 
+from canny_func import region_of_interest, make_points, average, display_lines
+
+
 class GetImage(object):
     def __init__(self):
-        # Update frequency 
+        # Update frequency
         self.freq = rospy.Rate(1)
         self.bridge = CvBridge()
 
@@ -18,8 +21,20 @@ class GetImage(object):
         self.pub = rospy.Publisher('imagetimer', Image, queue_size=10)
 
     def line_detection(self, image):
-        # line detection code
-        self.pub.publish(self.bridge.cv2_to_imgmsg(image)) 
+        # =========== line detection code ===========
+        img = cv2.imread("lane detection images/test4.jpg")
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        blur = cv2.GaussianBlur(gray, (5, 5), 0)
+        edges = cv2.Canny(blur, 100, 200)
+        roi = region_of_interest(edges)
+        lines = cv2.HoughLinesP(roi, 2, np.pi/180, 100,
+                                np.array([]), minLineLength=40, maxLineGap=5)
+        copy = np.copy(img)
+        averaged_lines = average(copy, lines)
+        black_lines = display_lines(copy, averaged_lines)
+        img_w_lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
+        # =============================================
+        self.pub.publish(self.bridge.cv2_to_imgmsg(img_w_lanes))
 
     def callback(self, msg):
         rospy.loginfo('Got image')
@@ -31,14 +46,11 @@ class GetImage(object):
         while not rospy.is_shutdown():
             rospy.logifo('Publishing image')
             if self.image is not None:
-                rospy.Subscriber("/tesla_roadster/camera_node/image/raw", Image, self.callback)
+                rospy.Subscriber("/hippiehipppo/camera_node/image/raw", Image, self.callback)
             self.freq.sleep()
+
 
 if __name__ == '__main__':
     rospy.init_node("imagetimer111", anonymous=True)
     getImageNode = GetImage()
     getImageNode.start()
-
-
-
-
