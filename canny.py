@@ -58,7 +58,7 @@ from canny_func import region_of_interest, make_points, average, display_lines
 
 
 # Loading image and convert it into gray scale
-img = cv2.imread("lane detection images/test4.jpg")
+img = cv2.imread("lane detection images/test12.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # plt.imshow(gray)
 # plt.show()
@@ -136,6 +136,7 @@ lines = cv2.HoughLinesP(roi, 2, np.pi/180, 100,
 copy = np.copy(img)
 averaged_lines = average(copy, lines)
 black_lines = display_lines(copy, averaged_lines)
+# combine the line image and the color image (copy*0.8 + black_lines*1 + 1)
 lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
 cv2.imshow('result', lanes)
 cv2.waitKey(3000)

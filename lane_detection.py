@@ -22,19 +22,19 @@ class GetImage(object):
 
     def line_detection(self, image):
         # =========== line detection code ===========
-        img = cv2.imread("lane detection images/test4.jpg")
-        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # img = cv2.imread("lane detection images/test4.jpg")
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         blur = cv2.GaussianBlur(gray, (5, 5), 0)
         edges = cv2.Canny(blur, 100, 200)
         roi = region_of_interest(edges)
         lines = cv2.HoughLinesP(roi, 2, np.pi/180, 100,
                                 np.array([]), minLineLength=40, maxLineGap=5)
-        copy = np.copy(img)
+        copy = np.copy(image)
         averaged_lines = average(copy, lines)
         black_lines = display_lines(copy, averaged_lines)
         img_w_lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
         # =============================================
-        self.pub.publish(self.bridge.cv2_to_imgmsg(img_w_lanes))
+        self.pub.publish(self.bridge.cv2_to_imgmsg(img_w_lanes, "bgr8"))
 
     def callback(self, msg):
         rospy.loginfo('Got image')
@@ -44,9 +44,10 @@ class GetImage(object):
     def start(self):
         rospy.loginfo('Reading images...')
         while not rospy.is_shutdown():
-            rospy.logifo('Publishing image')
-            if self.image is not None:
-                rospy.Subscriber("/hippiehipppo/camera_node/image/raw", Image, self.callback)
+            rospy.loginfo('Publishing image')
+            # if self.image is not None:
+            rospy.Subscriber(
+                "/hippiehippo/camera_node/image/raw", Image, self.callback)
             self.freq.sleep()
 
 
