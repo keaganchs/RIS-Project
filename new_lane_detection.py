@@ -11,14 +11,10 @@ from sensor_msgs.msg import Image
 from canny_func import region_of_interest, make_points, average, display_lines
 
 
-class GetImage(object):
+class Lane_Detector:
     def __init__(self):
-        # Update frequency
-        self.freq = rospy.Rate(1)
-        self.bridge = CvBridge()
-
-        # Publisher
-        self.pub = rospy.Publisher('imagetimer', Image, queue_size=10)
+        self.pub = rospy.Publisher(
+            '/TeslaRoadster/camera_node/image/detected', Image, queue_size=10)
 
     def line_detection(self, image):
         # =========== line detection code ===========
@@ -34,24 +30,27 @@ class GetImage(object):
         black_lines = display_lines(copy, averaged_lines)
         img_w_lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
         # =============================================
-        self.pub.publish(self.bridge.cv2_to_imgmsg(img_w_lanes, "bgr8"))
+        return img_w_lanes
 
     def callback(self, msg):
         rospy.loginfo('Got image')
-        image = self.bridge.imgmsg_to_cv2(msg)
-        self.line_detection(image)
+        bridge = CvBridge()
+        cv_image = bridge.imgmsg_to_cv2(msg, "bgr8")
+        processed_img = self.line_detection(cv_image)
+        rospy.loginfo('Publishing image')
+        self.pub.publish(bridge.cv2_to_imgmsg(processed_img, "bgr8"))
 
-    def start(self):
-        rospy.loginfo('Reading images...')
-        while not rospy.is_shutdown():
-            rospy.loginfo('Publishing image')
-            # if self.image is not None:
-            rospy.Subscriber(
-                "/TeslaRoadster/camera_node/image/raw", Image, self.callback)
-            self.freq.sleep()
+    def subscriber(self):
+        rospy.Subscriber("/TeslaRoadster/camera_node/image/raw",
+                         Image, self.callback)
 
 
 if __name__ == '__main__':
-    rospy.init_node("imagetimer111", anonymous=True)
-    getImageNode = GetImage()
-    getImageNode.start()
+
+    rospy.init_node('Lane_detection')
+    try:
+        dt_objdt = Lane_Detector()
+        dt_objdt.subscriber()
+        rospy.spin()
+    except rospy.ROSInterruptException:
+        pass

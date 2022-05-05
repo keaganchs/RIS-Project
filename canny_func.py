@@ -69,5 +69,5 @@ def display_lines(image, lines):
         for line in lines:
             print(line)
             x1, y1, x2, y2 = line
-            cv2.line(lines_image, (x1, y1), (x2, y2), (0, 0, 255), 20)
+            cv2.line(lines_image, (x1, y1), (x2, y2), (0, 255, 0), 20)
     return lines_image
