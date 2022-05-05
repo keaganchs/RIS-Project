@@ -13,8 +13,7 @@ from canny_func import region_of_interest, make_points, average, display_lines
 
 class Lane_Detector:
     def __init__(self):
-        self.pub = rospy.Publisher(
-            '/TeslaRoadster/camera_node/image/detected', Image, queue_size=10)
+        self.pub = rospy.Publisher('/TeslaRoadster/camera_node/image/detected', Image, queue_size=10)
 
     def line_detection(self, image):
         # =========== line detection code ===========
@@ -41,8 +40,7 @@ class Lane_Detector:
         self.pub.publish(bridge.cv2_to_imgmsg(processed_img, "bgr8"))
 
     def subscriber(self):
-        rospy.Subscriber("/TeslaRoadster/camera_node/image/raw",
-                         Image, self.callback)
+        rospy.Subscriber("/TeslaRoadster/camera_node/image/raw", Image, self.callback)
 
 
 if __name__ == '__main__':
