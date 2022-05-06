@@ -52,7 +52,7 @@ if __name__ == '__main__':
     try:
         dt_lane = Lane_Detector()
         dt_lane.subscriber()
-        rospy.Rate(20)
+        # rospy.Rate(20)
         rospy.spin()
     except rospy.ROSInterruptException:
         pass
