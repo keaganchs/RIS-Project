@@ -19,7 +19,7 @@ rosrun image_transport republish compressed in:=/TeslaRoadster/camera_node/image
 
 In shell 2:
 ```
-cd Desktop/RIS-Project/object_detection/scripts
+cd ./object_detection/scripts
 python3 lane_object_detection.py
 ```
 
