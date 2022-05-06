@@ -1,0 +1,116 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>m_BR_doort_frame01189.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>132</xmin>
+			<ymin>206</ymin>
+			<xmax>180</xmax>
+			<ymax>246</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>430</xmin>
+			<ymin>206</ymin>
+			<xmax>492</xmax>
+			<ymax>262</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>175</xmin>
+			<ymin>171</ymin>
+			<xmax>197</xmax>
+			<ymax>190</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>375</xmin>
+			<ymin>164</ymin>
+			<xmax>403</xmax>
+			<ymax>192</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>482</xmin>
+			<ymin>171</ymin>
+			<xmax>510</xmax>
+			<ymax>198</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>520</xmin>
+			<ymin>166</ymin>
+			<xmax>541</xmax>
+			<ymax>192</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>591</xmin>
+			<ymin>167</ymin>
+			<xmax>605</xmax>
+			<ymax>182</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>408</xmin>
+			<ymin>166</ymin>
+			<xmax>440</xmax>
+			<ymax>175</ymax>
+		</bndbox>
+	</object>
+</annotation>

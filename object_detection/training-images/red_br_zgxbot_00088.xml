@@ -1,0 +1,129 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>red_br_zgxbot_00088.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>384</xmin>
+			<ymin>168</ymin>
+			<xmax>424</xmax>
+			<ymax>218</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>115</xmin>
+			<ymin>156</ymin>
+			<xmax>160</xmax>
+			<ymax>195</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckiebot</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>45</xmin>
+			<ymin>172</ymin>
+			<xmax>215</xmax>
+			<ymax>271</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Intersection sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>389</xmin>
+			<ymin>115</ymin>
+			<xmax>425</xmax>
+			<ymax>162</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>472</xmin>
+			<ymin>224</ymin>
+			<xmax>524</xmax>
+			<ymax>237</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>216</ymin>
+			<xmax>17</xmax>
+			<ymax>235</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>278</xmin>
+			<ymin>183</ymin>
+			<xmax>293</xmax>
+			<ymax>197</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>251</xmin>
+			<ymin>179</ymin>
+			<xmax>262</xmax>
+			<ymax>188</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>230</ymin>
+			<xmax>49</xmax>
+			<ymax>242</ymax>
+		</bndbox>
+	</object>
+</annotation>

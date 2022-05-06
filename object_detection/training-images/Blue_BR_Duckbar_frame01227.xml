@@ -1,0 +1,51 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>Blue_BR_Duckbar_frame01227.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>111</xmin>
+			<ymin>253</ymin>
+			<xmax>178</xmax>
+			<ymax>304</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>533</xmin>
+			<ymin>234</ymin>
+			<xmax>586</xmax>
+			<ymax>278</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>364</xmin>
+			<ymin>244</ymin>
+			<xmax>463</xmax>
+			<ymax>273</ymax>
+		</bndbox>
+	</object>
+</annotation>

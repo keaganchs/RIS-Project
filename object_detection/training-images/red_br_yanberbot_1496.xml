@@ -1,0 +1,155 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>red_br_yanberbot_1496.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>397</xmin>
+			<ymin>162</ymin>
+			<xmax>423</xmax>
+			<ymax>180</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>616</xmin>
+			<ymin>226</ymin>
+			<xmax>638</xmax>
+			<ymax>281</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>374</xmin>
+			<ymin>134</ymin>
+			<xmax>384</xmax>
+			<ymax>160</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>350</xmin>
+			<ymin>127</ymin>
+			<xmax>364</xmax>
+			<ymax>140</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>141</xmin>
+			<ymin>137</ymin>
+			<xmax>152</xmax>
+			<ymax>162</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>199</xmin>
+			<ymin>133</ymin>
+			<xmax>212</xmax>
+			<ymax>147</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Signal sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>142</xmin>
+			<ymin>113</ymin>
+			<xmax>152</xmax>
+			<ymax>136</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Signal sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>199</xmin>
+			<ymin>118</ymin>
+			<xmax>212</xmax>
+			<ymax>130</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Intersection sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>351</xmin>
+			<ymin>111</ymin>
+			<xmax>365</xmax>
+			<ymax>124</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckiebot</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>217</xmin>
+			<ymin>130</ymin>
+			<xmax>277</xmax>
+			<ymax>160</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Traffic light</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>265</xmin>
+			<ymin>91</ymin>
+			<xmax>275</xmax>
+			<ymax>104</ymax>
+		</bndbox>
+	</object>
+</annotation>

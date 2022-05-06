@@ -1,0 +1,116 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>m_br_yanberbot_3141.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckiebot</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>537</xmin>
+			<ymin>132</ymin>
+			<xmax>639</xmax>
+			<ymax>253</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>486</xmin>
+			<ymin>141</ymin>
+			<xmax>519</xmax>
+			<ymax>176</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>134</ymin>
+			<xmax>187</xmax>
+			<ymax>168</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>138</xmin>
+			<ymin>137</ymin>
+			<xmax>163</xmax>
+			<ymax>169</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Stop sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>137</xmin>
+			<ymin>103</ymin>
+			<xmax>163</xmax>
+			<ymax>133</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Intersection sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>487</xmin>
+			<ymin>105</ymin>
+			<xmax>516</xmax>
+			<ymax>137</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Intersection sign</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>100</ymin>
+			<xmax>189</xmax>
+			<ymax>131</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>QR code</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>182</ymin>
+			<xmax>104</xmax>
+			<ymax>191</ymax>
+		</bndbox>
+	</object>
+</annotation>

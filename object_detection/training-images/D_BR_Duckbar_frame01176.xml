@@ -1,0 +1,38 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>D_BR_Duckbar_frame01176.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>376</ymin>
+			<xmax>68</xmax>
+			<ymax>470</ymax>
+		</bndbox>
+	</object>
+
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>438</xmin>
+			<ymin>226</ymin>
+			<xmax>479</xmax>
+			<ymax>259</ymax>
+		</bndbox>
+	</object>
+</annotation>

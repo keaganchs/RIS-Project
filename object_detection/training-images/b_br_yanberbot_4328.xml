@@ -1,0 +1,25 @@
+<annotation>
+		<folder>folder</folder>
+		<filename>b_br_yanberbot_4328.jpg</filename>
+		<source>
+		<database>object_id</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Duckie</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>120</xmin>
+			<ymin>173</ymin>
+			<xmax>147</xmax>
+			<ymax>195</ymax>
+		</bndbox>
+	</object>
+</annotation>
