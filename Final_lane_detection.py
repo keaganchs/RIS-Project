@@ -24,8 +24,11 @@ class Lane_Detector:
         roi = region_of_interest(edges)
         lines = cv2.HoughLinesP(roi, 2, np.pi/180, 100,
                                 np.array([]), minLineLength=40, maxLineGap=5)
+        if lines is None:
+            return image
         copy = np.copy(image)
         averaged_lines = average(copy, lines)
+        # print(averaged_lines)
         black_lines = display_lines(copy, averaged_lines)
         img_w_lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
         # =============================================
@@ -47,8 +50,9 @@ if __name__ == '__main__':
 
     rospy.init_node('Lane_detection')
     try:
-        dt_objdt = Lane_Detector()
-        dt_objdt.subscriber()
+        dt_lane = Lane_Detector()
+        dt_lane.subscriber()
+        rospy.Rate(20)
         rospy.spin()
     except rospy.ROSInterruptException:
         pass
