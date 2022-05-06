@@ -8,7 +8,9 @@ Team Members: Bogdan Belenis, Keagan Holmes, Eunchong Kim
 ## To run this code:  
 
 Add the following to the "~/.bashrc" file:  
+```
 export "ROS_MASTER_URI=http://TeslaRoadster.local:11311"  
+```
 
 In shell 1:  
 ```
