@@ -5,22 +5,15 @@ This is an object avoidance project using computer vision with [Duckiebots](http
 Team Members: Bogdan Belenis, Keagan Holmes, Eunchong Kim  
   
   
+## To run this code: 
+In shell 1:
+rosrun image_transport republish compressed in:=/TeslaRoadster/camera_node/image raw out:=/TeslaRoadster/camera_node/image/raw
 
-## Code Formatting:  
+In shell 2:
+cd Desktop/RIS-Project/object_detection/scripts
+python3 lane_object_detection.py
 
-Brackets go like  
-```
-foo()
-{  
-    this sparks joy 
-}
-```  
+In shell 3:
+dts start_gui_tools TeslaRoadster
+rqt_image_view
 
-And **NOT** like 
-```
-foo() {  
-    this does not spark joy  
-}
-```  
-
-*Violaters will be sued for emotional damages.*
