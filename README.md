@@ -27,5 +27,9 @@ In shell 3:
 ```
 dts start_gui_tools TeslaRoadster
 rqt_image_view
-```
 
+```
+## Requirements:
+```
+pip install -r requirements.txt
+```

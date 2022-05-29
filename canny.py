@@ -58,22 +58,33 @@ from canny_func import region_of_interest, make_points, average, display_lines
 
 
 # Loading image and convert it into gray scale
-img = cv2.imread("lane detection images/test12.jpg")
+img = cv2.imread("lane detection test images/frame.jpg")
+cv2.imshow('input img', img)
+cv2.waitKey(3000)
+
+
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Gray img', gray)
+cv2.waitKey(3000)
 # plt.imshow(gray)
+# plt.title('Gray Image'), plt.xticks([]), plt.yticks([])
 # plt.show()
 
 # Gaussian Blur
 blur = cv2.GaussianBlur(gray, (5, 5), 0)
+cv2.imshow('Gaussian Blue', blur)
+cv2.waitKey(3000)
 # plt.imshow(blur, cmap='gray')
 # plt.title('GaussianBlur'), plt.xticks([]), plt.yticks([])
 # plt.show()
 
 # Canny edge detector
 edges = cv2.Canny(blur, 100, 200)
-plt.imshow(edges, cmap='gray')
-plt.title('Canny Edge Image'), plt.xticks([]), plt.yticks([])
-plt.show()
+cv2.imshow('Canny edge', edges)
+cv2.waitKey(3000)
+# plt.imshow(edges, cmap='gray')
+# plt.title('Canny Edge'), plt.xticks([]), plt.yticks([])
+# plt.show()
 
 
 # def region_of_interest(image):
@@ -86,9 +97,11 @@ plt.show()
 
 
 roi = region_of_interest(edges)
-plt.imshow(roi, cmap='gray')
-plt.title('a'), plt.xticks([]), plt.yticks([])
-plt.show()
+cv2.imshow('ROI', roi)
+cv2.waitKey(3000)
+# plt.imshow(roi, cmap='gray')
+# plt.title('Region of interest'), plt.xticks([]), plt.yticks([])
+# plt.show()
 
 
 lines = cv2.HoughLinesP(roi, 2, np.pi/180, 100,
@@ -138,5 +151,5 @@ averaged_lines = average(copy, lines)
 black_lines = display_lines(copy, averaged_lines)
 # combine the line image and the color image (copy*0.8 + black_lines*1 + 1)
 lanes = cv2.addWeighted(copy, 0.8, black_lines, 1, 1)
-cv2.imshow('result', lanes)
+cv2.imshow('Result', lanes)
 cv2.waitKey(3000)

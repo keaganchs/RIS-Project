@@ -8,13 +8,13 @@ import numpy as np
 import rospy
 from sensor_msgs.msg import Image
 
+# Lane Detection
 from canny_func import region_of_interest, make_points, average, display_lines
 
-# OD
+# Object Detectiob
 import argparse
 import torch
 from detect import detect
-from distance_detection import find_marker, distance_to_camera
 from utils.general import check_img_size, check_requirements, check_imshow, non_max_suppression, apply_classifier, \
     scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path
 
@@ -95,7 +95,6 @@ if __name__ == '__main__':
         parser.add_argument('--name', default='exp', help='save results to project/name')
         parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
         opt = parser.parse_args()
-        # print(opt)
         check_requirements()
 
         dt_objdt = Detector(opt)
