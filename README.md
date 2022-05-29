@@ -31,5 +31,6 @@ rqt_image_view
 ```
 ## Requirements:
 ```
+cd ./object_detection/scripts
 pip install -r requirements.txt
 ```
