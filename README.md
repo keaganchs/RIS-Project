@@ -29,7 +29,7 @@ dts start_gui_tools TeslaRoadster
 rqt_image_view
 
 ```
-## Requirements:
+## Install Requirements:
 ```
 cd ./object_detection/scripts
 pip install -r requirements.txt
